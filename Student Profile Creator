@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main()
+{
+    char name[20],reg,cname[10],dept[10];
+    char email[30];
+    long int phno;
+    int dd,mm,yy;
+    float sslc,hsc,cgpa;
+    printf("Enter your name:");
+    fgets(name,sizeof(name),stdin);
+    printf("Enter your Register Number:");
+    fgets(name,sizeof(name),stdin);
+    printf("Enter the date of Birth:");
+    scanf("%d/%d/%d",&dd,&mm,&yy);
+    printf("Enter the college name: ");
+    scanf(" %s",cname);
+    printf("Enter the Department: ");
+    scanf("%s",dept);
+    printf("Enter the mobile number:");
+    scanf("%ld",&phno);
+    printf("Enter the Email ID:");
+    scanf("%s",email);
+    printf("Enter the SSLC Marks:");
+    scanf("%f",&sslc);
+    printf("Enter the HSC Marks:");
+    scanf("%f",&hsc);
+    printf("Enter the College cgpa:");
+    scanf("%f",&cgpa);
+        printf("Name              :%s",name);
+        printf("Register no       :%s",name);
+        printf("Date of Birth     :%d/%d/%d\n",dd,mm,yy);
+        printf("College name      :%s\n",cname);
+        printf("Department        :%s\n",dept);
+        printf("Mobile Number     :%.10ld\n",phno);
+        printf("Email ID          :%s\n",email);
+        printf("SSLC Mark         :%f\n",sslc);
+        printf("HSC Mark          :%f\n",hsc);
+        printf("CGPA              :%f\n",cgpa);
+        
+    return 0;
+}
