@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    printf("Welcome to the Wavelength Calculator\n");
+    float fr1;
+    float c=3*(pow(10,8));
+    printf("Speed of light is %f\n",c);
+    printf("Enter the frequency in GHz\n");
+    scanf("%f",&fr1);
+    float lambda=c/(fr1*pow(10,9));
+    printf("Wavelength is\n%fm",lambda);
+    return 0;
+}
