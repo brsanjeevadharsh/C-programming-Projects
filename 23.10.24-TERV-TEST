@@ -1,0 +1,26 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+    // Write C code here
+int a[10]={1,2,150,5};
+int num=0;
+int num2=0;
+int n=4;
+int b[10]={8,9,10,11};
+for(int i=0,j=0;i<n,j<n;i++,j++)
+{
+    if(a[i]>b[j])
+    {
+        num++;
+    }
+    else if(a[i]<b[j])
+    {
+        num2++;
+    }
+    else
+    {
+        num+=0;
+        num2+=0;
+    }
+}
+printf("%d and %d",num,num2);}
